@@ -1,8 +1,9 @@
-public class Circle extends Shape{
+public class Circle implements Ishape{
     int radius;
+    String color;
     final double PI=3.14;
     public Circle (String color ,int radius){
-        super(color);
+        this.color =color;
         this.radius =radius;
     }
     @Override
@@ -13,8 +14,5 @@ public class Circle extends Shape{
     public double calculatePerimeter(){
         return 2*PI*this.radius;
     }
-    @Override
-    public void display(){
-        System.out.println("This is a "+super.color+"circle");
-    }
+
 }

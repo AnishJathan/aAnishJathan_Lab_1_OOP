@@ -1,9 +1,11 @@
 public class Square extends Rectangle {
-    public Square(String color,int length ,int width){
-        super(color,length ,width);
+    public Square(String color,int side){
+        super(color,side ,side);
     }
     @Override
-    public void display(){
-        System.out.println("This is a "+super.color+"square");
+    public double calculateArea(){ 
+        System.out.println( "Cal area in square");
+        return this.length *this.width;
     }
+
 }

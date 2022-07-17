@@ -1,21 +1,21 @@
-public class Rectangle extends Shape{
-    int length , width;
+public class Rectangle implements Ishape{
+    int length , width ;
+    String color;
+
+    
     public Rectangle (String color ,int length , int width){
-        super(color);
+        this.color = color;
         this.length =length;
         this.width = width;
     }
-    @Override
-    public double calculateArea(){
-        return this.length*this.width;
-    }
+
     @Override
     public double calculatePerimeter(){
         return 2 * (this.width+this.length);
     }
     @Override
-    public void display(){
-        System.out.println("This is a "+super.color+"rectangle");
+    public double calculateArea(){
+        return this.length*this.width;
     }
 }
 

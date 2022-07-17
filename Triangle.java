@@ -1,7 +1,8 @@
-public class Triangle extends Shape{
+public class Triangle implements Ishape{
     int height , base;
+    String color;
     public Triangle (String color ,int height , int base){
-        super(color);
+        this.color =color;
         this.height =height;
         this.base = base;
     }
@@ -12,10 +13,6 @@ public class Triangle extends Shape{
     @Override
     public double calculatePerimeter(){
         return ((height+base)+Math.sqrt(height^2+base^2));
-    }
-    @Override
-    public void display(){
-        System.out.println("This is a "+super.color+"Triangle");
     }
 }
 

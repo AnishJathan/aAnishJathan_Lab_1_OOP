@@ -11,7 +11,7 @@ public class Shape {
     public double calculatePerimeter(){
         return 0;
     }
-    public void display(){
+    public void draw(){
         System.out.println("this is a shape with color");
     }
 }
